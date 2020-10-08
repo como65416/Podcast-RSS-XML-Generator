@@ -6,5 +6,12 @@
             "email": "como65416@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "sabre/xml": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Comoco\\PodcastRssXml\\": "src/"
+        }
+    }
 }
