@@ -124,6 +124,7 @@ class Item
                 $this->getGuidXml(),
                 $this->getPubDateXml(),
                 $this->getEnclosureXml(),
+                $this->getDurationXml(),
             ],
         ];
     }
@@ -171,6 +172,17 @@ class Item
     {
         return [
             'itunes:explicit' => ($this->isExplicit) ? 'yes' : 'no',
+        ];
+    }
+
+    protected function getDurationXml()
+    {
+        if ($this->duration === 0) {
+            return null;
+        }
+
+        return [
+            'itunes:duration' => gmdate('H:i:s', $this->duration),
         ];
     }
 }

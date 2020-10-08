@@ -61,6 +61,7 @@ echo $content . PHP_EOL;
    <guid isPermaLink="false">dzpodclean</guid>
    <pubDate>Tue, 14 Mar 2017 12:00:00 GMT</pubDate>
    <enclosure url="https://www.example.com/podcasts/dafnas-zebras/audio/toptenmyths.mp3" type="audio/mpeg" length="26004388"/>
+   <itunes:duration>00:22:48</itunes:duration>
   </item>
  </channel>
 </rss>
